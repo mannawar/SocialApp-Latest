@@ -25,10 +25,9 @@ namespace API.Extensions
             services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));      
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<LogUserActivity>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddSignalR();
             services.AddSingleton<PresenceTracker>();
-
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
 
         }
