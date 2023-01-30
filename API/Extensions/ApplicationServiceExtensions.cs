@@ -15,7 +15,7 @@ namespace API.Extensions
         {
             services.AddDbContext<DataContext>(options => 
             {
-                options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
             });
 
             //Adding cors
