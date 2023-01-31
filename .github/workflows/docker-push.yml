@@ -1,7 +1,9 @@
 name: docker-push
 
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
+  label:
+    types: [created, edited]
   # push:
   #   branches:
   #     - 'deployment'
