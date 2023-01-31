@@ -2,9 +2,9 @@ name: docker-push
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - 'deployment'
+  # push:
+  #   branches:
+  #     - 'deployment'
 
 jobs:
   docker:
