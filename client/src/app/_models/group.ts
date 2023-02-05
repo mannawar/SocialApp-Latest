@@ -1,6 +1,6 @@
 export interface Group {
     name: string;
-    conections: Connection[];
+    connections: Connection[];
 }
 
 export interface Connection {
